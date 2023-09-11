@@ -203,20 +203,21 @@ header {
 .section1 h3{
   text-align: center;
   color: #f1faee;
-  position: absolute;
+  position: relative;
   font-size: 40px;
   font-family: cursive;
   top: 145px;
-  left: 42px;
+
+
 }
 
-.section1 pre{
+.section1 p{
   color: #f1faee;
-  position: absolute;
+  position: relative;
   font-size: 24px;
-  top: 195px;
+  top: 175px;
   font-family: cursive;
-  left: -24px;
+  text-align: center;
 }
 
 /*button css*/
@@ -254,7 +255,10 @@ button:hover svg {
 button:hover span {
   transform: translateX(7px);
 }
-
+/**section*/
+.section2{
+  background-color: #f1faee;
+}
 .section2 h1{
 
   text-align: center;
@@ -264,14 +268,16 @@ button:hover span {
   position: relative;
   text-align: center;
   font-weight: bold;
-  font-size: 25px;
-  margin-top: 15px;
+  font-size: 32px;
+  margin-top: 25px;
 }
 
-.section2 pre{
+.section2 p{
+  text-align: center;
   position: relative;
-  font-size: 25px;
-  margin-top: 24px;
+  font-size: 21px;
+  /* margin-top: 24px; */
+  color: var(--text-gray-color);
   font-family: cursive;
 }
 
@@ -436,6 +442,7 @@ button:hover span {
     background-color: #fafafa;
     color: #fafafa;
     border-radius: 5px;
+    opacity: 0;
     position: absolute;
     width: 30px;
     height: 30px;
@@ -445,6 +452,7 @@ button:hover span {
   position: absolute;
 }
 .card:hover  .link1{
+  opacity: 1;
   transform: translateX(30px);
   background-image: radial-gradient(
     circle at 30% 107%,
@@ -456,6 +464,7 @@ button:hover span {
   );
 }
 .card:hover .link2 {
+  opacity: 1;
   transform: translateX(-30px);
   background-color: #0061be;
 } 
